@@ -3,18 +3,18 @@ let lvl = 0;
 let seq = [];
 let copySeq = [];
 
-// document.body.addEventListener("keydown", function () {
-//     if (lvl == 0) {
-//         console.log("hi");
-//         startGame();
-//     }
-// })
-document.body.addEventListener("click", function () {
-    if (lvl == 0 ) {
+document.body.addEventListener("keydown", function () {
+    if (lvl == 0) {
         console.log("hi");
         startGame();
     }
 })
+// document.body.addEventListener("click", function () {
+//     if (lvl == 0 ) {
+//         console.log("hi");
+//         startGame();
+//     }
+// })
 
 function startGame() {
     isGameStarted = true;
@@ -53,7 +53,7 @@ for (let box of boxes) {
                     seq.shift();
                 }
                 console.log("Game over");
-                document.querySelector("p").innerHTML = `GAME OVER! Your score was ${lvl} <br> Tap to restart`;
+                document.querySelector("p").innerHTML = `GAME OVER! Your score was ${lvl} <br> Prss any key to restart`;
                 setTimeout(()=>{
                     lvl=0
                 },2000);
