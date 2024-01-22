@@ -1,0 +1,49 @@
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-weight: 700;
+    height: 40px;
+}
+
+.mainContainer{
+    /* border: 2px solid black; */
+    height: 250px;
+    width: 250px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.colorBox{
+    border: 6px solid black;
+    height: 100px;
+    width: 100px;
+    border-radius: 30px;
+}
+
+.colorBox:active{
+    transform: scale(1.05);
+}
+
+.box1{
+    background-color: #f99b45;
+}
+.box2{
+    background-color: #d95980;
+}
+.box3{
+    background-color: #819ff9;
+}
+.box4{
+    background-color: #63aac0;
+    /* background-color: gray; */
+}
+
+.flick{
+    background-color: azure;
+}
+
